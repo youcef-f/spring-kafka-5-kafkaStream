@@ -489,7 +489,7 @@ public class Greeting {
 ![](doc/testKafka3.jpg)
  
  
-
+## Consumer
 **Lancer le consumer sur le topic de sortie des données filter par kafka stream **
  
 Différents messages sont envoyés sur le topic **my-spring-kafka-streams-topic** dont kafka stream est souscrit, si l'un de ces message se termine par ***youcef**, alors kafka stream le rederige vers le topic **spring-kafka-streams-output-topic**  
@@ -507,7 +507,7 @@ a  *youcef
 a  *youcef
 ```
  
- **curl command line**
+## curl command line
  
 ```shell
 λ curl -d "message=Bonjour tout le monde" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://localhost:8080/kafka/publish
